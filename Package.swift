@@ -16,8 +16,5 @@ let package = Package(
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
             name: "NatenWorking"),
-        .testTarget(
-            name: "NatenWorkingTests",
-            dependencies: ["NatenWorking"]),
     ]
 )
