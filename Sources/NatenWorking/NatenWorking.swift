@@ -11,6 +11,8 @@ public enum NetworkError: Error {
 
 public final class NetworkManager {
     
+    public init () {}
+    
     @available(iOS 13.0.0, *)
     public func performURLRequest<T: Decodable>(_ urlString: String) async throws -> T? {
         guard let url = URL(string: urlString) else { throw NetworkError.invalidURL }
